@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://chaveiro24horasgilvan.github.io/Chaveiro/sitemap.xml
