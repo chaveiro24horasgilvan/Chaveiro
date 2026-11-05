@@ -1,0 +1,564 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chaveiro 24h Aracaju | Atendimento Rápido</title>
+
+<meta name="description" content="Chaveiro 24 horas em Aracaju SE. Abertura de portas, cópias de chaves e conserto de fechaduras. Ligue agora!">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #071d38;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffc247;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffc247;
+}
+
+.hero {
+    min-height: 540px;
+    background: linear-gradient(120deg, #071d38ee, #123b64dd),
+    url("https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1600&q=80");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #ffc247;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 5vw, 55px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-yellow {
+    background: #ffc247;
+    color: #071d38;
+}
+
+.btn-green {
+    background: #20c76a;
+    color: white;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 5%;
+    background: white;
+}
+
+.feature {
+    font-weight: bold;
+    color: #071d38;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    color: #071d38;
+    font-size: 32px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #0000000c;
+    transition: .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+}
+
+.service-card .icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: #071d38;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #666;
+}
+
+.area {
+    background: #071d38;
+    color: white;
+    text-align: center;
+}
+
+.area h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.bairros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.bairro {
+    background: #173c63;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.review {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #0000000c;
+}
+
+.stars {
+    color: #ffb72b;
+    margin-bottom: 12px;
+}
+
+.cta {
+    background: #ffc247;
+    text-align: center;
+}
+
+.cta h2 {
+    color: #071d38;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #06162b;
+    color: white;
+    padding: 45px 8%;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+    color: #c5d0df;
+}
+
+footer a {
+    color: #ffc247;
+    text-decoration: none;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 999;
+    background: #20c76a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px #0004;
+}
+
+.whatsapp:hover {
+    background: #159b50;
+}
+
+.menu-mobile {
+    display: none;
+    cursor: pointer;
+    font-size: 27px;
+}
+
+@media(max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 15px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 6%;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .whatsapp {
+        right: 12px;
+        bottom: 12px;
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🔑 CHAVEIRO <span>24H</span></div>
+
+    <div class="menu-mobile" onclick="toggleMenu()">☰</div>
+
+    <nav id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#area">Área atendida</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+    <div class="hero-content">
+
+        <div class="tag">⭐ DISPONÍVEL AGORA — 24 HORAS</div>
+
+        <h1>Chaveiro 24h em Aracaju</h1>
+
+        <p>
+        Trancado? Perdeu sua chave?
+        Conte com um chaveiro profissional em Aracaju.
+        Atendimento rápido, seguro e disponível a qualquer hora.
+        </p>
+
+        <a class="btn btn-yellow" href="tel:+5579999074766">
+            📞 LIGUE AGORA
+        </a>
+
+        <a class="btn btn-green"
+        href="https://wa.me/5579999074766?text=Olá!%20Preciso%20de%20um%20chaveiro."
+        target="_blank">
+            WhatsApp
+        </a>
+
+    </div>
+</section>
+
+<div class="features">
+    <div class="feature">🚀 Atendimento rápido</div>
+    <div class="feature">🛡️ Serviço profissional</div>
+    <div class="feature">🕒 24 horas por dia</div>
+    <div class="feature">📍 Aracaju e região</div>
+</div>
+
+<section id="servicos">
+
+    <div class="section-title">
+        <h2>Nossos Serviços</h2>
+        <p>Soluções profissionais para sua segurança.</p>
+    </div>
+
+    <div class="services">
+
+        <div class="service-card">
+            <div class="icon">🚪</div>
+            <h3>Abertura de Portas</h3>
+            <p>
+            Trancou a chave dentro de casa?
+            Atendimento para abertura de portas
+            com cuidado e profissionalismo.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🔑</div>
+            <h3>Cópia de Chaves</h3>
+            <p>
+            Cópias de chaves residenciais,
+            comerciais e automotivas.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon">🔒</div>
+            <h3>Conserto de Fechaduras</h3>
+            <p>
+            Reparo, manutenção e substituição
+            de fechaduras de diversos modelos.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="area" id="area">
+
+    <h2>Atendemos Aracaju e Região</h2>
+
+    <p>
+    Entre em contato para confirmar a disponibilidade
+    de atendimento no seu bairro.
+    </p>
+
+    <div class="bairros">
+        <span class="bairro">Centro</span>
+        <span class="bairro">Atalaia</span>
+        <span class="bairro">Coroa do Meio</span>
+        <span class="bairro">Farolândia</span>
+        <span class="bairro">Grageru</span>
+        <span class="bairro">Jardins</span>
+        <span class="bairro">Luzia</span>
+        <span class="bairro">Salgado Filho</span>
+        <span class="bairro">São Conrado</span>
+        <span class="bairro">Suíssa</span>
+        <span class="bairro">Treze de Julho</span>
+        <span class="bairro">Inácio Barbosa</span>
+    </div>
+
+    <a class="btn btn-yellow"
+    href="https://wa.me/5579999074766?text=Olá!%20Gostaria%20de%20confirmar%20o%20atendimento%20no%20meu%20bairro."
+    target="_blank">
+        CONFIRMAR MINHA ÁREA
+    </a>
+
+</section>
+
+<section id="avaliacoes">
+
+    <div class="section-title">
+        <h2>Avaliações de Clientes</h2>
+        <p>Confira alguns depoimentos.</p>
+    </div>
+
+    <div class="reviews">
+
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>
+            "Atendimento rápido e profissional!
+            Chegou em menos de 20 minutos e resolveu tudo."
+            </p>
+            <br>
+            <strong>— Carlos M.</strong>
+        </div>
+
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>
+            "Trancada fora de casa às 2h da manhã
+            e eles vieram imediatamente."
+            </p>
+            <br>
+            <strong>— Ana Paula S.</strong>
+        </div>
+
+        <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>
+            "Preço justo e serviço de qualidade.
+            Recomendo para todos em Aracaju."
+            </p>
+            <br>
+            <strong>— Roberto L.</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta" id="contato">
+
+    <h2>Precisa de um Chaveiro Agora?</h2>
+
+    <p>
+    Não espere! Entre em contato e solicite atendimento.
+    </p>
+
+    <a class="btn btn-green"
+    href="https://wa.me/5579999074766?text=Olá!%20Preciso%20de%20um%20chaveiro%20agora."
+    target="_blank">
+        FALAR PELO WHATSAPP
+    </a>
+
+    <a class="btn btn-yellow"
+    href="tel:+5579999074766">
+        📞 (79) 9 9907-4766
+    </a>
+
+    <p><strong>Atendimento 24 horas — 7 dias por semana</strong></p>
+
+</section>
+
+</main>
+
+<footer>
+
+    <h2>🔑 Chaveiro 24h Aracaju</h2>
+
+    <p>Serviço profissional de chaveiro em Aracaju e região.</p>
+
+    <p>📞 (79) 9 9907-4766</p>
+
+    <p>📍 Aracaju — Sergipe</p>
+
+    <p>🕒 Atendimento 24 horas — 7 dias por semana</p>
+
+    <p>
+    <a href="#servicos">Serviços</a> |
+    <a href="#area">Área atendida</a> |
+    <a href="#contato">Contato</a>
+    </p>
+
+    <br>
+
+    <p>© 2026 Chaveiro 24h Aracaju. Todos os direitos reservados.</p>
+
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/5579999074766?text=Olá!%20Preciso%20de%20um%20chaveiro."
+target="_blank">
+    💬 Fale pelo WhatsApp
+</a>
+
+<script>
+
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("active");
+}
+
+// Fecha o menu ao clicar em um link
+document.querySelectorAll("#menu a").forEach(link => {
+    link.addEventListener("click", function() {
+        document.getElementById("menu").classList.remove("active");
+    });
+});
+
+// Atualiza o ano automaticamente
+document.querySelector("footer p:last-child").innerHTML =
+"© " + new Date().getFullYear() +
+" Chaveiro 24h Aracaju. Todos os direitos reservados.";
+
+</script>
+
+</body>
+</html>
